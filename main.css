@@ -1,0 +1,43 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(32, 32, 32);
+  color: rgb(186, 159, 255);
+
+}
+
+.drag-container {
+  box-shadow: 0 0 5px black;
+  background-color: rgb(20, 20, 20);;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.draggable {
+  box-shadow: 0 0 5px black;
+  padding: 20px;
+  background-color: rgb(31, 31, 31);
+  font-size: 25px;
+  user-select: none;
+  cursor: grab;
+}
+
+[picked-element] {
+  color: white;
+}
+
+[clone-element] {
+  box-shadow: 0 0 5px rgba(186, 159, 255, 0.473);
+  border: dotted 3px rgb(186, 159, 255);
+  /* padding: 35px; */
+  background: none;
+}
